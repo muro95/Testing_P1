@@ -11,6 +11,7 @@
 using namespace std;
 int main()
 {
+    int number_swaps = 0;
     int i, j, temp;
     int num = 1;
     int SIZE;
@@ -33,9 +34,12 @@ int main()
                 temp = NUMBER[j];
                 NUMBER[j] = NUMBER[j+1];
                 NUMBER[j+1] = temp;
+                number_swaps ++;
         }
-//        if (!swap) {
-//            return 0;
-//        }
+        if (!swap) {
+              cout<< "Number of swaps: " << number_swaps << endl;
+            return 0;
+        }
     }
+  
 }
